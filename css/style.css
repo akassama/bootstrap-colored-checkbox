@@ -1,0 +1,94 @@
+input[type="checkbox"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  background: lightgray;
+  height: 16px;
+  width: 16px;
+  border: 1px solid white;
+}
+
+/* Red Color */
+input[type="checkbox"].red-check:checked {
+  background: #FF0000;
+}
+input[type="checkbox"].red-check {
+  background: #c9494d;
+}
+
+/* Blue Color */
+input[type="checkbox"].blue-check:checked {
+  background: #4169E1;
+}
+input[type="checkbox"].blue-check {
+  background: #6f8bde;
+}
+
+/* Yellow Color */
+input[type="checkbox"].yellow-check:checked {
+  background: #FFFF00;
+}
+input[type="checkbox"].yellow-check {
+  background: #f5f57d;
+}
+
+/* Black Color */
+input[type="checkbox"].black-check:checked {
+  background: #000000;
+}
+input[type="checkbox"].black-check {
+  background: #2b2828;
+}
+
+/* White Color */
+input[type="checkbox"].white-check:checked {
+  background: #f5eded;
+}
+input[type="checkbox"].white-check {
+  background: #e6e8ed;
+}
+
+/* Brown Color */
+input[type="checkbox"].brown-check:checked {
+  background: #A52A2A;
+}
+input[type="checkbox"].brown-check {
+  background: #943131;
+}
+
+
+/* Green Color */
+input[type="checkbox"].green-check:checked {
+  background: #008000;
+}
+input[type="checkbox"].green-check {
+  background: #408240;
+}
+
+
+input[type="checkbox"] {
+  width: 1.2em; height: 1.2em;
+}
+
+input[type="checkbox"]:hover {
+  filter: brightness(90%);
+}
+
+input[type="checkbox"]:after {
+  content: '';
+  position: relative;
+  left: 40%;
+  top: 20%;
+  width: 15%;
+  height: 40%;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  display: none;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
